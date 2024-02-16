@@ -11,8 +11,13 @@
             "id": "993179b6208068ce",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -143,5 +148,19 @@
     }
   },
   "active": "4d14b42a8512921f",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Presentation Pics/v2/download_os.png",
+    "Presentation Pics/v2",
+    "Presentation Pics/New folder",
+    "Pasted image 20240216124515.png",
+    "Pasted image 20240216124451.png",
+    "Presentation Pics/install_py_vm.PNG",
+    "Presentation Pics/edit_config_file.PNG",
+    "Presentation Pics/ConnectViaSSH.PNG",
+    "Presentation Pics/UbuntuVMdOWNLOAD.PNG",
+    "Presentation Pics/script.PNG",
+    "Presentation Pics/OS_install.PNG",
+    "Presentation Pics/Asking_Bing.PNG",
+    "README.md"
+  ]
 }
