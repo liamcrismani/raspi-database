@@ -1,20 +1,23 @@
 # Raspberry Pi Database project
 
 ## Project overview
-This project originated as prep for a job interview. I was tasked with preparing a presentation for the inteview.  
-The task for the inter view was ''insert task here'', and my immediate idea, for better or worse, was to create a database project.  
-Ultimately the project failed in most aspects, but I was fortunate enough to get the job, thanks in no-small part for the fact that I was willing to talk  
-openly about how and why the project failed. So, fast forward 7 months, and I am reviving the project.
+This project originated as prep for a job interview. I was tasked with preparing a presentation for the interview, the topic of which was set as:
+
+> A key part of this role will be to support the development and implementation of new data management systems and procedures.
+> Please tell us why this interests you and give us an example of a time when you used skills that will support you in this aspect of the role.
+
+My first idea, for better or worse, was to create a database project. Ultimately the project failed in most aspects, but I was fortunate enough to get the job, thanks in part to the fact that I was willing to talk openly about how and why the project failed.
+Fast forward 7 months, and I am reviving the project.
 
 ## Project goals
 ### Original goals
-The original project definition was something like:  
- - Launch a headless Raspberry Pi  
- - Connect to the Pi by setting up an Ubuntu VM on my Windows machines, and connecting through SSH (I thought this was a good idea as this was how I connect to a bitcoin node I had run on the Pi previously...)  
- - Set up a SQLite database on the Pi  
- - Pull the data off the SQLite db  
- - Perform some data cleaning w/ Python  
- - migrate the clean data onto a PostgreSQL db.  
+The original project definition was:  
+ - set up a headless Raspberry Pi  
+ - connect to the Pi through SSH from an Ubuntu VM on my Windows machine(I thought this was a good idea as this was how I connected to a bitcoin node I had run on the Pi previously...)  
+ - set up a SQLite database
+ - pull the data off the SQLite db  
+ - perform some data cleaning w/ Python  
+ - migrate the clean data onto a PostgreSQL db  
  - Bonus: do a live pull of some data and plot a pretty graph  
 
 I was rapidly overwhelmed, however, and hit a lot of sticking points that made me realise the goals were a little too lofty.  
@@ -23,8 +26,8 @@ I was rapidly overwhelmed, however, and hit a lot of sticking points that made m
 I'd managed this before when running a Bitcoin node, but that was over a different ISP where enabling port-forwarding was a bit simpler.  
 
 **Getting data**  
-Being fairly new to the world of databases, I actually struggle quite hard to find a dataset. I just don't think I knew where to look.  
-I ended up settling for some datasets I pulled off Kaggle, there were [[shop customer data]], [[Urban ecology over time]], [[weeds in cultivation fields]].  
+Being fairly new to the world of databases, I was surprised by how difficult I found it to find a dataset. I didn't know where to look.  
+I ended up settling for some datasets I pulled off Kaggle, these were [[https://www.kaggle.com/datasets/datascientistanna/customers-dataset|shop customer data]], [[https://www.kaggle.com/datasets/thedevastator/urban-coyote-activity-and-diet-data-during-covid|urban ecology over time]], [[https://www.kaggle.com/datasets/thedevastator/weed-plant-taxonomy-in-france-and-uk|weeds in cultivation fields]].
 The idea was that the data would be something akin to what the company I was interviewing for would used, ie.e:  
 - Something operational  
 - Something ecological  
