@@ -1,4 +1,9 @@
-TODO: Initialise git repo
-TODO: write new overview/readme
 TODO: Insert hyperlinks and pictures in readme
-
+TODO: Set up raspberry pi
+TODO: install WSL
+TODO: create branches
+TODO: download Chinook dataset
+TODO: update readme
+TODO: Open project in VScode
+TODO: create SQLite database
+TODO: update readme
