@@ -1,0 +1,4 @@
+TODO: Initialise git repo
+TODO: write new overview/readme
+TODO: Insert hyperlinks and pictures in readme
+
