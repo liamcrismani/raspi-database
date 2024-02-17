@@ -95,3 +95,5 @@ I then installed Python
 and git
 in the ubuntu terminal
 configured username, email, and defaultbranch
+
+cloned the repo in the ubuntu directory
