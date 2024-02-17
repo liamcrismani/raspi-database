@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "07bd13fd1434953c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Process.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Process.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Process.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Process.md"
               }
             }
           }
@@ -147,8 +161,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d14b42a8512921f",
+  "active": "07bd13fd1434953c",
   "lastOpenFiles": [
+    "README.md",
+    "Process.md",
     "Presentation Pics/v2/download_os.png",
     "Presentation Pics/v2",
     "Presentation Pics/New folder",
@@ -160,7 +176,6 @@
     "Presentation Pics/UbuntuVMdOWNLOAD.PNG",
     "Presentation Pics/script.PNG",
     "Presentation Pics/OS_install.PNG",
-    "Presentation Pics/Asking_Bing.PNG",
-    "README.md"
+    "Presentation Pics/Asking_Bing.PNG"
   ]
 }

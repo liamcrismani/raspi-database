@@ -1,7 +1,4 @@
-TODO: move local repo
-TODO: remove unnecessary files
 TODO: pictures in readme
-TODO: Set up raspberry pi
 TODO: install WSL
 TODO: create branches
 TODO: download Chinook dataset
