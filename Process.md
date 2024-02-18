@@ -65,22 +65,15 @@ With the fresh OS installed, it was a simple process of:
 - Plug in the monitor and power supply
 - Create a new log in
 
-and we're in. I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gives me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
-
-## Opening a new branch in WSL Ubuntu
-
-With Ubuntu installed with WSL, I added a new folder and cloned this GitHub repo. I want a seperate branch for the SSH management.
-
+I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gives me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
 ## Preparing VS Code
 
-Since I wanted to use VS code for the code writing, I was pleasantly surprised to find [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) on how to open a WSL project in VS code. I followed the steps to prep VS code.
-- Opened VS code
-- Installed WSL extension
-- Instal remote development pack
-- Restarted VS code to update
-- Closed VS code
+Since I wanted to use VS code to manage some of the project, I was pleasantly surprised to find [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) on how to open a WSL project in VS code. I followed the steps to:
+- open VS code inside the local project directory
+- install the WSL extension
+- install the remote development pack
 
-### Updating Ubuntu
+Next I updated Ubuntu
 ```Bash
 sudo apt-get update
 ```
@@ -90,20 +83,11 @@ And the wget (not sure if needed, but installed just in case)
 sudo apt-get install wget ca-certificates
 ```
 
-I then installed Python
-- withing VS code useing the extensions tool
-and git
-in the ubuntu terminal
-configured username, email, and defaultbranch
+and then installed Python and configured git with my personal settings, and cloned this repo in the Ubuntu project folder.
 
-cloned the repo in the ubuntu directory
+## Accessing the Pi with SSH
 
-## Enabling SSH to the Pi
+This was the major sticking point of the project first time round. Thankfully, it was more pain-free this time. I followed the steps [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access).
 
-learned [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access)
+After getting a little bit stuck, I reset all my SSH settings and started fresh. I consulted with ChatGPT here: https://chat.openai.com/share/040fcdf4-51b3-4f1d-bbdc-b7b1298f5a9a
 
-### Grab the Pi IP address
-I accessed through the desktop 'Connection Information' window, but could also run `ping raspberrypi.local` on the ubuntu terminal.  
-
-Then
-- set up the ssh server
