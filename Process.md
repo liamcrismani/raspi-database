@@ -97,3 +97,13 @@ in the ubuntu terminal
 configured username, email, and defaultbranch
 
 cloned the repo in the ubuntu directory
+
+## Enabling SSH to the Pi
+
+learned [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access)
+
+### Grab the Pi IP address
+I accessed through the desktop 'Connection Information' window, but could also run `ping raspberrypi.local` on the ubuntu terminal.  
+
+Then
+- set up the ssh server
