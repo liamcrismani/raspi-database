@@ -91,3 +91,28 @@ This was the major sticking point of the project first time round. Thankfully, i
 
 After getting a little bit stuck, I reset all my SSH settings and started fresh. I consulted with ChatGPT here: https://chat.openai.com/share/040fcdf4-51b3-4f1d-bbdc-b7b1298f5a9a
 
+That still didn't quite resolve it, but after leaving it for a few days and coming back, I tried again and was able to connect first time. May have just needed to turn it off again.
+
+
+## Installing SQLite
+
+I then installed SQLite3 to host the first database. I followed [this guide](https://pimylifeup.com/raspberry-pi-sqlite/).
+
+First update the Raspberry Pi's OS
+```Terminal
+sudo apt update
+sudo apt full-upgrade
+```
+
+And then install SQLite
+```Terminal
+sudo apt install sqlite3
+```
+
+
+## Creating the a database
+
+I downloaded the Chinook dataset from [this tutorial](https://www.sqlitetutorial.net/sqlite-sample-database/). 
+
+Save the file to local repo (in WSL), and secure-copy to the Raspberry Pi over SSH
+
