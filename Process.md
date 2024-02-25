@@ -1,23 +1,25 @@
+# Process
 TODO
 - [] Transfer steps to readme
 - [ ] Rewrite with consistent language
-## Installing WSL
+## Install WSL
 
 I learned how to do this [here](https://learn.microsoft.com/en-us/windows/wsl/install)
 1. Enter windows features, enable WSL
 2. Restart your computer
-3. Open PowerShell, run the following commands
-To install WSL
+3. Or open PowerShell, run the following commands:
+
+Install WSL
 ```PowerShell
 wsl --install
 ```
 
-To install Ubuntu (other distros are available for istall w/ WSL)
+To install Ubuntu (other distros are available for install w/ WSL)
 ```PowerShell
 wsl --install -d Ubuntu-22.04
 ```
 
-Realise I need the Linux Kernel updates
+Update Linux kernels
 ```Powershell
 wsl.exe --update
 ```
@@ -27,7 +29,7 @@ Set WSL 2 as the default version
 wsl --set-default-version 2
 ```
 
-## Adding a gitignore
+## Add a gitignore
 
 I used Obsidian as my markdown editor, and was committing the obsidian source files to this GitHub repo, so needed to add a `gitignore` file to remove these files from future commits.
 
@@ -58,7 +60,7 @@ And finally commit the changes:
 git commit -m "update ignored files"
 ```
 
-## Setting up the Raspberry Pi
+## Set up the Raspberry Pi
 
 I already had Raspbian installed on the microSD I was using in the Pi, but had forgotten the login details, so formatted the card and put a fresh install of Raspberry Pi OS (64-bit) desktop with Raspberry Pi imager.
 
@@ -67,7 +69,9 @@ With the fresh OS installed, it was a simple process of:
 - Plug in the monitor and power supply
 - Create a new log in
 
-I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gives me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
+Download the Raspberry Pi imager [here](https://www.raspberrypi.com/software/).
+
+Write a version of Raspberry Pi OS to an SD card. I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gave me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
 ## Preparing VS Code
 
 Since I wanted to use VS code to manage some of the project, I was pleasantly surprised to find [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) on how to open a WSL project in VS code. I followed the steps to:
@@ -75,27 +79,34 @@ Since I wanted to use VS code to manage some of the project, I was pleasantly su
 - install the WSL extension
 - install the remote development pack
 
-Next I updated Ubuntu
+Open Ubuntu terminal and update the OS
 ```Bash
 sudo apt-get update
 ```
 
-And the wget (not sure if needed, but installed just in case)
+And then wget (not sure if needed, but installed just in case)
 ```Shell
 sudo apt-get install wget ca-certificates
 ```
 
-and then installed Python and configured git with my personal settings, and cloned this repo in the Ubuntu project folder.
+Then install Python via the extensions window, and clone this repo in an new WSL project directory.
 
 ## Accessing the Pi with SSH
 
-This was the major sticking point of the project first time round. Thankfully, it was more pain-free this time. I followed the steps [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access).
+With the Raspberry Pi connected to your local connect, find the IP address. This can be done via the settings if connected to a monitor, or by running the following command from your main machine:
 
-After getting a little bit stuck, I reset all my SSH settings and started fresh. I consulted with ChatGPT here: https://chat.openai.com/share/040fcdf4-51b3-4f1d-bbdc-b7b1298f5a9a
+```Bash
+ping raspberrypi.local
+```
 
-That still didn't quite resolve it, but after leaving it for a few days and coming back, I tried again and was able to connect first time. May have just needed to turn it off again.
+You'll need to enable SSH in both your Raspberry Pi and main machine, which can be found [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os) and [here](https://code.visualstudio.com/docs/remote/troubleshooting#_ssh-tips) respectively.
 
+Then to access your Pi from Ubuntu
+```Bash
+ssh username@<ipaddress>
+```
 
+You'll be prompted to enter the user log in details, after which you should be met by the Raspberry Pi command prompt
 ## Installing SQLite
 
 I then installed SQLite3 to host the first database. I followed [this guide](https://pimylifeup.com/raspberry-pi-sqlite/).
