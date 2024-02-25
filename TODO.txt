@@ -1,6 +1,4 @@
 TODO: pictures in readme
-TODO: download Chinook dataset
 TODO: update readme
-TODO: Open project in VScode
 TODO: create SQLite database
 TODO: update readme
