@@ -107,6 +107,7 @@ ssh username@<ipaddress>
 ```
 
 You'll be prompted to enter the user log in details, after which you should be met by the Raspberry Pi command prompt
+![[Pasted image 20240225181858.png]]
 ## Installing SQLite
 
 I then installed SQLite3 to host the first database. I followed [this guide](https://pimylifeup.com/raspberry-pi-sqlite/).
