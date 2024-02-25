@@ -3,4 +3,4 @@ TODO: update readme to imperative language
 TODO: update process for more blog-like narrative
 TODO: write python script to visualise some data
 TODO: write code to create Postgres database
-
+TODO: choose a gitignore template
