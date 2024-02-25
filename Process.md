@@ -1,4 +1,6 @@
-
+TODO
+- [] Transfer steps to readme
+- [ ] Rewrite with consistent language
 ## Installing WSL
 
 I learned how to do this [here](https://learn.microsoft.com/en-us/windows/wsl/install)
