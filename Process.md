@@ -129,6 +129,27 @@ ssh liamc@192.168.0.21
 ```
 
 Start SQLIite by navigating to the correct directory
+```Shell
+sqlite3 chinook/chinook.db
 ```
 
+Run some basic commands to explore the database:
+So view a catalogue of SQLite commands
+```SQL
+.help
+```
+
+See a list of tables in the database
+```SQL
+.tables
+```
+
+Show the databases SQLite has access to
+```SQL
+.databases
+```
+
+View the first 5 rows of the employees table
+```SQL
+SELECT * FROM employees LIMIT 5;
 ```
