@@ -116,3 +116,19 @@ I downloaded the Chinook dataset from [this tutorial](https://www.sqlitetutorial
 
 Save the file to local repo (in WSL), and secure-copy to the Raspberry Pi over SSH
 
+learned [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os).
+
+Copy the chinook directory
+```Shell
+scp -r chinook/ liamc@192.168.0.21:
+```
+
+Open the connect to the Raspberry Pi
+```Shell
+ssh liamc@192.168.0.21
+```
+
+Start SQLIite by navigating to the correct directory
+```
+
+```
