@@ -1,16 +1,10 @@
-## Project overview
-This project originated as prep for a job interview. I was tasked with preparing a presentation for the interview, the topic of which was set as:
-
-> A key part of this role will be to support the development and implementation of new data management systems and procedures.
-> Please tell us why this interests you and give us an example of a time when you used skills that will support you in this aspect of the role.
-
-My first idea, for better or worse, was to create a database project. Ultimately, the project failed in most aspects as I hit multiple sticking points, but the interview still went well. Fast forward 7 months, and I am reviving the project.
 
 ## Project goals
 ### Original goals
+
 The original project definition was:  
  - set up a headless Raspberry Pi
- - connect to the Pi through SSH from an Ubuntu VM on my Windows machine (I thought this was a good idea as this was how I connected to a bitcoin node I had run on the Pi previously...)  
+ - connect to the Pi through SSH from an Ubuntu VM on my Windows machine (I thought this was a good idea as this was how I connected to a bitcoin node I had run on the Pi previously...) 
  - set up a SQLite database
  - pull the data off the SQLite db  
  - perform some data cleaning 
