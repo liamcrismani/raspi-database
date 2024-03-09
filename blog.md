@@ -12,7 +12,7 @@ The original project definition was:
  - Bonus: do a live pull of some data and plot a pretty graph  
 
 I was rapidly overwhelmed, however, and hit a lot of sticking points that made me realise the goals were a little too lofty.  
-#### Sticking points
+### Sticking points
 **Couldn't connect to the Raspberry Pi over SSH through the Ubuntu VM**  
 I'd managed this before when running a Bitcoin node, but that was over a different ISP where enabling port-forwarding was a bit simpler.  
 
@@ -146,7 +146,9 @@ With the fresh OS installed, it was a simple process of:
 - Plug in the monitor and power supply
 - Create a new log in
 
-I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gives me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
+Download the Raspberry Pi imager [here](https://www.raspberrypi.com/software/).
+
+Write a version of Raspberry Pi OS to an SD card. I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gave me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
 ## Preparing VS Code
 
 Since I wanted to use VS code to manage some of the project, I was pleasantly surprised to find [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) on how to open a WSL project in VS code. I followed the steps to:
@@ -164,15 +166,26 @@ And the wget (not sure if needed, but installed just in case)
 sudo apt-get install wget ca-certificates
 ```
 
-and then installed Python and configured git with my personal settings, and cloned this repo in the Ubuntu project folder.
+Then install Python via the extensions window, and clone this repo in an new WSL project directory.
 
 ## Accessing the Pi with SSH
 
-This was the major sticking point of the project first time round. Thankfully, it was more pain-free this time. I followed the steps [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access).
+With the Raspberry Pi connected to your local connect, find the IP address. This can be done via the settings if connected to a monitor, or by running the following command from your main machine:
 
-After getting a little bit stuck, I reset all my SSH settings and started fresh. I consulted with ChatGPT here: https://chat.openai.com/share/040fcdf4-51b3-4f1d-bbdc-b7b1298f5a9a
+```Bash
+ping raspberrypi.local
+```
 
-That still didn't quite resolve it, but after leaving it for a few days and coming back, I tried again and was able to connect first time. May have just needed to turn it off again.
+You'll need to enable SSH in both your Raspberry Pi and main machine, which can be found [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os) and [here](https://code.visualstudio.com/docs/remote/troubleshooting#_ssh-tips) respectively.
+
+Then to access your Pi from Ubuntu
+```Bash
+ssh username@<ipaddress>
+```
+
+You'll be prompted to enter the user log in details, after which you should be met by the Raspberry Pi command prompt
+![[Pasted image 20240225181858.png]]
+
 
 
 ## Installing SQLite
