@@ -4,18 +4,20 @@ TODO:
 - [ ] refer to Readme best practices
 - [ ] rewrite in imperative language
 
-Connect to a Raspberry Pi over SSH, migrate the Chinook database from SQLite to PostgreSQL, and slice and dice your data.
+Connect to a Raspberry Pi over SSH, migrate the Chinook database from SQLite to PostgreSQL, slice and dice your data.
+
 ## Project overview
+
 This project originated as prep for a job interview. The first iteration failed. Fast forward 7 months, and I am reviving the project. Read more in the jupyter notebook TODO: insert github link here.
 
 ## Project goals
-
-To see how these goals have changed, go here TODO: instert gihub link.
 
  - Set up a Raspberry Pi (doesn't have to be headless) 
  - Load the [Chinook database](https://www.sqlitetutorial.net/sqlite-sample-database/) on SQLite  
  - Migrate the data to a PostgreSQL db  
  - Bonus: plot some data  
+
+To see how these goals have changed, go here TODO: instert gihub link.
 
 ## Motivation
 
