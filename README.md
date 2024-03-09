@@ -20,7 +20,7 @@ This project originated as prep for a job interview. I was tasked with preparing
 > A key part of this role will be to support the development and implementation of new data management systems and procedures.
 > Please tell us why this interests you and give us an example of a time when you used skills that will support you in this aspect of the role.
 
-So I had the bright idea of creating a database project to talk about in my interview. Ultimately, the project failed in most aspects as I hit multiple sticking points. 7 months older and wiser I am revisiting the project.
+So I had the bright idea of creating a database project to talk about in my interview. Ultimately, the project failed in most aspects as I hit multiple sticking points. 7 months older and wiser, I am revisiting the project.
 
 This project seeks to explore remote computing, Linux and WSL, SQL databases, Git and GitHub for project management, Bash, and Markdown editing.
 
