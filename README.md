@@ -11,7 +11,7 @@ Connect to a Raspberry Pi over SSH, migrate the Chinook database from SQLite to 
  - Migrate the data to a PostgreSQL database
  - Bonus: plot some data  
 
-To see how these goals have changed, go [here](blog#Original goals)
+To see how these goals have changed, go [here](blog.md#Original goals)
 
 ## Motivation
 
@@ -26,7 +26,7 @@ This project seeks to explore remote computing, Linux and WSL, SQL databases, Gi
 
 ## Limitations and challenges
 
-Full list of personal struggles with this project can be found [here](blog#Sticking points) TLDR;
+Full list of personal struggles with this project can be found [here](blog.md#Sticking points) TLDR;
 - SHH connection to Raspberry Pi can be tricky if you add unnecessary layers of complexity
 - Trying to create a database from unrelated datasets will make your life difficult
 
