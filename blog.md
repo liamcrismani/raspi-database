@@ -189,6 +189,7 @@ ssh username@<ipaddress>
 ```
 
 You'll be prompted to enter the user log in details, after which you should be met by the Raspberry Pi command prompt
+
 ![pi-connect-ssh](Assetts/Pictures/v2/ssh_connect.PNG)
 
 
