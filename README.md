@@ -36,7 +36,7 @@ Good if you want to get your feet wet with WSL, SSH to a remote computer, and SQ
 ## Repo contents  
 
 - [/chinook](/chinook): database file
-- [blog.md](blog.md): markdown blog documenting project progress. Provides a narrative and example code.
+- [blog.md](blog.md): markdown blog documenting project progress. Awkward blend of narrative and instructions.
 - [data_visualisation.ipynb](data_visualisation.ipynb): notebook that connects to and visualises data from the database
 
 ## Credits

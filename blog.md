@@ -66,8 +66,7 @@ I really wanted this job, but it was my first interview for a position of this k
  - Set the Chinook database up on SQLite  
  - Migrate the data to a PostgreSQL db  
  - Bonus: plot some data  
-####
-What I plan to do differently this time  
+#### What I plan to do differently this time  
 I'll also dedicate time to the project in a more structured way, and leverage the following technologies:
 - Visual Studio Code for a nice project development environment
 - Git and GitHub for version control
