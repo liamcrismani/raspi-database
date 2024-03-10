@@ -3,7 +3,7 @@
 
 The original project definition was:  
  - set up a headless Raspberry Pi
- - connect to the Pi through SSH from an Ubuntu VM on my Windows machine (I thought this was a good idea as this was how I connected to a bitcoin node I had run on the Pi previously...) 
+ - connect to the Pi through SSH from an Ubuntu VM on my Windows machine (I thought this was a good idea as this was how I connected to a Bitcoin node I had run on the Pi previously...) 
  - set up a SQLite database
  - pull the data off the SQLite db  
  - perform some data cleaning 
@@ -21,7 +21,7 @@ I'd managed this before when running a Bitcoin node, but that was over a differe
 ![VM-set-up](Assetts/Pictures/v1/ConnectViaSSH.PNG)
 
 **Getting data**  
-Being fairly new to the world of databases, I was surprised by how difficult I found it to find a dataset. I didn't know where to look.  
+Being fairly new to the world of databases, I was surprised by how difficult it was to find a dataset. I didn't know where to look.  
 I ended up settling for some data I pulled off Kaggle:  [shop customer data](https://www.kaggle.com/datasets/datascientistanna/customers-dataset), [urban ecology over time](https://www.kaggle.com/datasets/thedevastator/urban-coyote-activity-and-diet-data-during-covid), [weeds in cultivation fields](https://www.kaggle.com/datasets/thedevastator/weed-plant-taxonomy-in-france-and-uk).
 
 The idea was that the data would be something akin to what the company I was interviewing for would use, i.e. the data would be relational, and in one of the following categories:
@@ -30,7 +30,7 @@ The idea was that the data would be something akin to what the company I was int
 - ecological    
 
 **Creating the database**  
-At the point of starting the project I had learned some basic Python and SQL, and felt fairly confident that I could, with enough time and resources, create a very simple database connection in Python. That confidence faded quickly. I had already stumbled at the first two hurdles, and it didn't take long for me to struggle with this and decide to revise the project goals.  
+At the point of starting the project, I had learned some basic Python and SQL, and felt fairly confident that I could, with enough time and resources, create a straightforward database connection in Python. That confidence faded quickly. I had already stumbled at the first two hurdles, and it didn't take long for me to struggle with this and decide to revise the project goals.  
 
 #### Revised original goals  
  - create the databases and perform the migration locally (no Raspberry Pi)
@@ -45,20 +45,20 @@ At the point of starting the project I had learned some basic Python and SQL, an
 
 A key requirement of relational databases is that the data tables are related... it was quite comical how long it took me to realise the data I had gathered wasn't.  
 
-Despite refreshing the plan and setting more reasonable goals, I continued to struggle. The interview date was moving closer, I was still in a full time job, and my anxiety levels were rising. I would say I was wondering why I had set such an ambitious target, but I really did think the original project remit was achievable. I also thought that the project based approach would give me exactly what I needed to point to for the presentation topic definition.  
+Despite refreshing the plan and setting more reasonable goals, I continued to struggle. The interview date was moving closer, I was still in a full-time job, and my anxiety levels were rising. I would say I was wondering why I had set such an ambitious target, but I really did think the original project remit was achievable. I also thought that the project-based approach would give me exactly what I needed to point to for the presentation topic definition.  
 
-#### Why I got stuck first time around
+#### Why I got stuck the first time around
 Reflecting on the original project, I think the main reasons I met the challenges I did were:
 
 **Lack of technical skills**  
 If I was a whizz with Python and SQL at the time, the technical work would have been much easier. It's not a particularly difficult task, but I put hurdles in that I didn't need to, and some hurdles I didn't predict.  
 
 **No good project management system**  
-The project was spread across Notion, word documents, paper, PowerPoint, and my head. I even set the  goal of creating the presentation with Quarto, which I head never used before.  
+The project was spread across Notion, word documents, paper, PowerPoint, and my head. I even set the  goal of creating the presentation with Quarto, which I had never used before.  
 As someone who needs simple systems, this was enough to set my head spinning. Thankfully, this time around I have a bit more experience with the wonderfully simple but powerful markdown. And git. Both of which I intend to leverage heavily for version 2. 
 
 **Nerves**  
-I really wanted this job, but it was my first interview for a position of this kind. Jobs I interview for previously didn't require this level of preparation.
+I really wanted this job, but it was my first interview for a position of this kind. Jobs I interviewed for previously didn't require this level of preparation.
 
 ### Version 2 goals
 
@@ -147,13 +147,13 @@ I already had Raspbian installed on the microSD I was using in the Pi, but had f
 With the fresh OS installed, it was a simple process of:
 - Insert the new SD card
 - Plug in the monitor and power supply
-- Create a new log in
+- Create a new login
 
 Download the Raspberry Pi imager [here](https://www.raspberrypi.com/software/).
 
 ![pi-imager](Assetts/Pictures/v2/download_os.png)
 
-Write a version of Raspberry Pi OS to an SD card. I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gave me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
+Write a version of Raspberry Pi OS to an SD card. I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gave me the option to work right on the Pi if I struggle with `SSH` as I did the first time around.
 ## Preparing VS Code
 
 Since I wanted to use VS code to manage some of the project, I was pleasantly surprised to find [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) on how to open a WSL project in VS code. I followed the steps to:
@@ -161,7 +161,7 @@ Since I wanted to use VS code to manage some of the project, I was pleasantly su
 - install the WSL extension
 - install the remote development pack
 
-Next I updated Ubuntu
+Next, I updated Ubuntu
 ```Bash
 sudo apt-get update
 ```
@@ -171,11 +171,11 @@ And the wget (not sure if needed, but installed just in case)
 sudo apt-get install wget ca-certificates
 ```
 
-Then install Python via the extensions window, and clone this repo in an new WSL project directory.
+Then install Python via the extensions window, and clone this repo in a new WSL project directory.
 
 ## Accessing the Pi with SSH
 
-With the Raspberry Pi connected to your local connect, find the IP address. This can be done via the settings if connected to a monitor, or by running the following command from your main machine:
+With the Raspberry Pi connected to your local network, find the IP address. This can be done via the settings if connected to a monitor, or by running the following command from your main machine:
 
 ```Bash
 ping raspberrypi.local
@@ -188,7 +188,7 @@ Then to access your Pi from Ubuntu
 ssh username@<ipaddress>
 ```
 
-You'll be prompted to enter the user log in details, after which you should be met by the Raspberry Pi command prompt
+You'll be prompted to enter the user login details, after which you should be met by the Raspberry Pi command prompt
 
 ![pi-connect-ssh](Assetts/Pictures/v2/ssh_connect.png)
 
@@ -214,7 +214,7 @@ sudo apt install sqlite3
 
 I downloaded the Chinook dataset from [this tutorial](https://www.sqlitetutorial.net/sqlite-sample-database/). 
 
-Save the file to local repo (in WSL), and secure-copy to the Raspberry Pi over SSH
+Save the file to the local repo (in WSL), and secure-copy to the Raspberry Pi over SSH
 
 learned [here](https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os).
 
@@ -234,7 +234,7 @@ sqlite3 chinook/chinook.db
 ```
 
 Run some basic commands to explore the database:
-So view a catalogue of SQLite commands
+To view a catalogue of SQLite commands
 ```SQL
 .help
 ```

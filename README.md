@@ -1,8 +1,8 @@
 # Raspberry Pi Database
 
-## Project overview
+## Project Overview
 
-Connect to a Raspberry Pi over SSH, migrate the Chinook database from SQLite to PostgreSQL, slice and dice your data.
+Connect to a Raspberry Pi over SSH, migrate the Chinook database from SQLite to PostgreSQL, and slice and dice your data.
 
 ## Project goals
 
@@ -11,7 +11,7 @@ Connect to a Raspberry Pi over SSH, migrate the Chinook database from SQLite to 
  - Migrate the data to a PostgreSQL database
  - Bonus: plot some data  
 
-To see how these goals have changed, checkout [the blog](https://github.com/liamcrismani/raspi-database/blob/main/blog.md#original-goals)
+To see how these goals have changed, check [the blog](https://github.com/liamcrismani/raspi-database/blob/main/blog.md#original-goals)
 ## Motivation
 
 This project originated as prep for a job interview. I was tasked with preparing a presentation for the interview. The presentation topic was set as:
@@ -25,7 +25,7 @@ This project seeks to explore remote computing, Linux and WSL, SQL databases, Gi
 
 ## Limitations and challenges
 
-Full list of personal struggles with this project can be found [here](https://github.com/liamcrismani/raspi-database/blob/main/blog.md#sticking-points) TLDR;
+A full list of personal struggles with this project can be found [here](https://github.com/liamcrismani/raspi-database/blob/main/blog.md#sticking-points) TLDR;
 - SHH connection to Raspberry Pi can be tricky if you add unnecessary layers of complexity
 - Trying to create a database from unrelated datasets will make your life difficult
 
@@ -41,12 +41,12 @@ Good if you want to get your feet wet with WSL, SSH to a remote computer, and SQ
 
 ## Credits
 **WSL tutorials**
-[Get started with WSL](https://learn.microsoft.com/en-us/windows/wsl/) . Install distros, set up development environments, and get started with git in WSL.
+[Get started with WSL](https://learn.microsoft.com/en-us/windows/wsl/). Install distros, set up development environments, and get started with git in WSL.
 
 **Raspberry Pi tutorials**
-[Raspberry Pi documentation](https://www.raspberrypi.com/documentation/): Set up a raspberry pi, connect over SSH, use secure copy.
+[Raspberry Pi documentation](https://www.raspberrypi.com/documentation/): Set up a Raspberry Pi, connect over SSH, and use secure copy.
 
-**Other repos viewed but no used**
+**Other repos viewed but not used**
 https://github.com/lerocha/chinook-database
 
 **SQLite tutorials**
