@@ -12,7 +12,7 @@ The original project definition was:
 
 I was rapidly overwhelmed, however, and hit a lot of sticking points that made me realise the goals were a little too lofty.  
 
-![Raspberry-pi](Assetts/Pictures/v2/pi_connected.PNG)
+![Raspberry-pi](Assetts/Pictures/v2/pi_connected.png)
 
 ### Sticking points
 **Couldn't connect to the Raspberry Pi over SSH through the Ubuntu VM**  
@@ -108,7 +108,7 @@ Set WSL 2 as the default version
 wsl --set-default-version 2
 ```
 
-![WSL-install](Assetts/Pictures/v2/install_distro.PNG)
+![WSL-install](Assetts/Pictures/v2/install_distro.png)
 ## Add a gitignore
 
 I used Obsidian as my markdown editor, and was committing the obsidian source files to this GitHub repo, so needed to add a `gitignore` file to remove these files from future commits.
@@ -151,7 +151,7 @@ With the fresh OS installed, it was a simple process of:
 
 Download the Raspberry Pi imager [here](https://www.raspberrypi.com/software/).
 
-![pi-imager](Assetts/Pictures/v2/download_os.PNG)
+![pi-imager](Assetts/Pictures/v2/download_os.png)
 
 Write a version of Raspberry Pi OS to an SD card. I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gave me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
 ## Preparing VS Code
@@ -190,7 +190,7 @@ ssh username@<ipaddress>
 
 You'll be prompted to enter the user log in details, after which you should be met by the Raspberry Pi command prompt
 
-![pi-connect-ssh](Assetts/Pictures/v2/ssh_connect.PNG)
+![pi-connect-ssh](Assetts/Pictures/v2/ssh_connect.png)
 
 
 
