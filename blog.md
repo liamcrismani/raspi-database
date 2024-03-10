@@ -1,4 +1,3 @@
-
 ## Project goals
 ### Original goals
 
@@ -12,9 +11,14 @@ The original project definition was:
  - Bonus: do a live pull of some data and plot a pretty graph  
 
 I was rapidly overwhelmed, however, and hit a lot of sticking points that made me realise the goals were a little too lofty.  
+
+![Raspberry-pi](Assetts/Pictures/v2/pi_connected.PNG)
+
 ### Sticking points
 **Couldn't connect to the Raspberry Pi over SSH through the Ubuntu VM**  
 I'd managed this before when running a Bitcoin node, but that was over a different ISP where enabling port-forwarding was a bit simpler.  
+
+![VM-set-up](Assetts/Pictures/v1/ConnectViaSSH.PNG)
 
 **Getting data**  
 Being fairly new to the world of databases, I was surprised by how difficult I found it to find a dataset. I didn't know where to look.  
@@ -56,7 +60,6 @@ As someone who needs simple systems, this was enough to set my head spinning. Th
 **Nerves**  
 I really wanted this job, but it was my first interview for a position of this kind. Jobs I interview for previously didn't require this level of preparation.
 
-
 ### Version 2 goals
 
  - Create a WSL development environment
@@ -66,7 +69,9 @@ I really wanted this job, but it was my first interview for a position of this k
  - Set the Chinook database up on SQLite  
  - Migrate the data to a PostgreSQL db  
  - Bonus: plot some data  
+
 #### What I plan to do differently this time  
+
 I'll also dedicate time to the project in a more structured way, and leverage the following technologies:
 - Visual Studio Code for a nice project development environment
 - Git and GitHub for version control
@@ -75,9 +80,7 @@ I'll also dedicate time to the project in a more structured way, and leverage th
 These goals are very similar to the original remit, but 7 months has passed, and I think I have the time and skillset to make it happened this time.  
 
 # Process
-TODO
-- [] Transfer steps to readme
-- [ ] Rewrite with consistent language
+
 ## Install WSL
 
 I learned how to do this [here](https://learn.microsoft.com/en-us/windows/wsl/install)
@@ -105,6 +108,7 @@ Set WSL 2 as the default version
 wsl --set-default-version 2
 ```
 
+![WSL-install](Assetts/Pictures/v2/install_distro.PNG)
 ## Add a gitignore
 
 I used Obsidian as my markdown editor, and was committing the obsidian source files to this GitHub repo, so needed to add a `gitignore` file to remove these files from future commits.
@@ -147,6 +151,8 @@ With the fresh OS installed, it was a simple process of:
 
 Download the Raspberry Pi imager [here](https://www.raspberrypi.com/software/).
 
+![pi-imager](Assetts/Pictures/v2/download_os.PNG)
+
 Write a version of Raspberry Pi OS to an SD card. I chose the desktop version or Raspberry Pi OS over the headless version, because I have a second monitor, and it gave me the option to work right on the Pi if I struggle with `SSH` as I did first time around.
 ## Preparing VS Code
 
@@ -183,7 +189,7 @@ ssh username@<ipaddress>
 ```
 
 You'll be prompted to enter the user log in details, after which you should be met by the Raspberry Pi command prompt
-![[Pasted image 20240225181858.png]]
+![pi-connect-ssh](Assetts/Pictures/v2/ssh_connect.PNG)
 
 
 
