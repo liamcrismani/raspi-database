@@ -1,6 +1,4 @@
-TODO: update process for more blog-like narrative - merge blog and process.md
 TODO: write python script to visualise some data
 TODO: write code to create Postgres database
-TODO: insert github links in readme
 TODO: add shell history file
 TODO: remove/ignore bloat files
