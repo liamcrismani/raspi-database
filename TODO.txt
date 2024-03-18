@@ -1,4 +1,3 @@
 TODO: write python script to visualise some data
-TODO: write code to create Postgres database
 TODO: add shell history file
 TODO: remove/ignore bloat files
